@@ -1,0 +1,71 @@
+.inner-table td {
+	vertical-align: top;
+}
+div.slider {
+	display: none;
+}
+table.dataTable > thead .sorting::before, table.dataTable > thead .sorting::after, 
+table.dataTable > thead .sorting_asc::before, table.dataTable > thead .sorting_asc::after, 
+table.dataTable > thead .sorting_desc::before, table.dataTable > thead .sorting_desc::after {
+	bottom: 0.1em;
+}
+table.dataTable tbody td.no-padding {
+	padding: 0;
+}
+td.details-control::before {
+	height: 1em;
+	width: 1em;
+	padding: 0.4em;
+	margin-top: -9px;
+	display: inline-block;
+	color: white;
+	border: .15em solid white;
+	border-radius: 1em;
+	box-shadow: 0 0 .2em #444;
+	box-sizing: content-box;
+	text-align: center;
+	text-indent: 0 !important;
+	font-family: "Courier New",Courier,monospace;
+	line-height: 1em;
+	content: "+";
+	background-color: #31b131;
+	cursor: pointer;
+}
+tr.shown td.details-control::before {
+	content: "-";
+	background-color: #d33333;
+}
+@media (min-width: 768px) {
+	.slider {
+		margin: 1em 2em;
+	}
+}
+.icTitle {
+	font-weight: bold;
+	margin: 0em 0.5em 1em 0;
+}
+.icDescription {
+	font-size: 13px;
+	margin: 0em 0.5em 1em 0;
+}
+.icTime {
+	font-size: 13px;
+	margin: 0em 0em 1em 0;
+}
+.icLocation {
+	font-size: 11px;
+	margin: 0em 0.5em 1em 0;
+}
+.icLocation p {
+	margin-bottom: 0.2em;
+}
+.icLocation .room {
+	font-size: 12px;
+	font-weight: bold;
+}
+.icLocation .address {}
+.icLocation .postcode {}
+.icLocation .website {}
+.icType {
+	text-align: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interview Exercise - James Carr</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.6.0/jq-3.6.0/dt-1.11.4/cr-1.5.5/fc-4.0.1/fh-3.2.1/kt-2.6.4/r-2.2.9/rg-1.1.4/sp-1.4.0/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+	
+	<div class="container">
+
+		<div class="openDay">
+			<h1 id="openDayTitle"></h1>
+			<p id="openDayDescription" class="lead"></p>
+			<p id="openDayDate" class="text-muted"></p>
+			<table id="openDay" class="display table-responsive table-striped" style="width:100%">
+				<thead>
+					<th></th>
+					<th></th>
+					<th>Name</th>
+					<th>Description</th>
+					<th class="hidden">Program Titles</th>
+					<th class="hidden">Program Locations</th>
+				</thead>
+				<tbody></tbody>
+				<tfoot>
+					<th></th>
+					<th></th>
+					<th>Name</th>
+					<th>Description</th>
+					<th class="hidden">Program Titles</th>
+					<th class="hidden">Program Locations</th>
+				</tfoot>
+			</table>
+		</div>
+
+	</div><!-- /.container -->
+
+	<!-- sliding inner table template -->
+	<div class="slider" id="innerContent">
+		<table class="display table-responsive table-striped">
+			<thead>
+				<!--th></th-->
+				<th>Title</th>
+				<th>Description</th>
+				<th>Time</th>
+				<th>Location</th>
+				<th>Type</th>
+			</thead>
+			<tbody>
+				<tr class="icRow">
+					<!--td class="icCoverImage"></td-->
+					<td><div class="icTitle"></div></td>
+					<td><div class="icDescription"></div></td>
+					<td><div class="icTime"></div></td>
+					<td><div class="icLocation"></div></td>
+					<td class="icType"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.6.0/jq-3.6.0/dt-1.11.4/cr-1.5.5/fc-4.0.1/fh-3.2.1/kt-2.6.4/r-2.2.9/rg-1.1.4/sp-1.4.0/datatables.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+	</body>
+</html>
